@@ -41,10 +41,13 @@ li {
       background: #ce4e4e; }
 
 .item {
-  padding: 20px 20px 20px 50px;
+  padding: 15px 20px 15px 50px;
   font-size: 20px;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .item:nth-child(2n) {
     background: #f9f9f9; }
   .item:nth-child(2n+1) {
@@ -67,10 +70,13 @@ li {
       transform: rotate(45deg);
       height: 15px;
       width: 7px; }
+  .item .input {
+    padding: 10px; }
+  .item .edit {
+    padding: 20px 25px; }
+    .item .edit:hover {
+      background: #3b9e9e; }
   .item .close {
-    padding: 20px 25px;
-    position: absolute;
-    right: 0;
-    top: 0; }
+    padding: 20px 25px; }
     .item .close:hover {
       background: red; }

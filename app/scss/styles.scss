@@ -62,11 +62,13 @@ li {
 }
 
 .item {
-  padding: 20px 20px 20px 50px;
+  padding: 15px 20px 15px 50px;
   font-size: 20px;
   cursor: pointer;
   position: relative;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   &:nth-child(2n) {
     background: #f9f9f9;
   }
@@ -99,12 +101,20 @@ li {
     }
   }
 
+  .input {
+    padding: 10px;
+  }
+  .edit {
+    padding: 20px 25px;
+    
+    &:hover {
+      background: #3b9e9e;
+    }
+  }
+
   .close {
     padding: 20px 25px;
-    position: absolute;
-    right: 0;
-    top: 0;
-
+    
     &:hover {
       background: red;
     }
